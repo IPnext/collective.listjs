@@ -1,0 +1,20 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:five="http://namespaces.zope.org/five"
+  xmlns:browser="http://namespaces.zope.org/browser"
+  i18n_domain="collective.listjs">
+
+  <browser:resourceDirectory
+    name="collective.listjs.ecmascripts"
+    directory="ecmascripts"
+    />
+
+  <browser:page
+	for="*"
+	name="listjs_folder_view"
+	class=".folderviews.ListJsEnabledFolderView"
+	template="templates/listjs_folder_view.pt"
+	permission="zope2.View"
+	/>
+	
+</configure>
