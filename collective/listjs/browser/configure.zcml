@@ -9,11 +9,24 @@
     directory="ecmascripts"
     />
 
+  <browser:resourceDirectory
+    name="collective.listjs.stylesheets"
+    directory="stylesheets"
+    />
+
   <browser:page
 	for="*"
-	name="listjs_folderlist_view"
+	name="listjs_folder_simple_view"
 	class=".folderviews.ListJsEnabledFolderView"
-	template="templates/listjs_folderlist_view.pt"
+	template="templates/folder_simple_view.pt"
+	permission="zope2.View"
+	/>
+	
+  <browser:page
+	for="*"
+	name="listjs_folder_tabular_view"
+	class=".folderviews.ListJsEnabledFolderView"
+	template="templates/folder_tabular_view.pt"
 	permission="zope2.View"
 	/>
 	

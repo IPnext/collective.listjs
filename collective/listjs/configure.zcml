@@ -6,7 +6,9 @@
     i18n_domain="collective.listjs">
 
   <five:registerPackage package="." initialize=".initialize" />
-
+  
+  <i18n:registerTranslations directory="locales" />
+  
   <genericsetup:registerProfile
       name="default"
       title="List.js integration"
@@ -16,5 +18,5 @@
       />
       
   <include package=".browser" />
-  
+
 </configure>
