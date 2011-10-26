@@ -54,10 +54,9 @@ class ListJsEnabledFolderView(BrowserView):
         """
 
         # How many items is one one page
-        limit = 3
+        limit = 100
 
         # What kind of query we perform?
-        # Here we limit results to ProductCard content type
         filter = {}
 
         # Read the first index of the selected batch parameter as HTTP GET request query parameter

@@ -11,9 +11,9 @@
 
   <browser:page
 	for="*"
-	name="listjs_folder_view"
+	name="listjs_folderlist_view"
 	class=".folderviews.ListJsEnabledFolderView"
-	template="templates/listjs_folder_view.pt"
+	template="templates/listjs_folderlist_view.pt"
 	permission="zope2.View"
 	/>
 	
