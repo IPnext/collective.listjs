@@ -28,7 +28,15 @@
 					
 						<tal:block tal:condition="batch">
 
-						<input class="search" />
+						<div id="listjs-searchbox">
+							
+						<fieldset>
+							<label>Filter: </label>
+							<input class="search" />
+						</fieldset>
+							
+						</div>
+						
 						<p class="sort" rel="title" i18n:translate="label_sort_title">Sort by Title</p>
 
 						<ul class="list">
