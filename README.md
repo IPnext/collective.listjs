@@ -1,7 +1,7 @@
 # collective.js - Plone integration for the List.js library
 
-by Rigel Di Scala <zedr@ipnext.it>
-IPnext srl - http://www.ipnext.it
+ + Rigel Di Scala <zedr@ipnext.it>
+ + IPnext srl - http://www.ipnext.it
 
 
 ## Introduction
@@ -11,7 +11,7 @@ making them searchable, sortable, orderable, and filterable.
 
  + http://listjs.com/
 
-collective.listjs integrates List.js in Plone 4 by providing the library as a 
+*collective.listjs* integrates List.js in Plone 4 by providing the library as a 
 resource, together with a set of views that are usable out-of-the-box.
 
 
@@ -31,7 +31,7 @@ In your buildout.cfg, add the following:
 
 Rerun the Buildout script to download and make available the egg as a new product.
 
-Then, access your Plone instance and install the new product.
+Then, access your Plone instance and install it.
 
 
 ## Usage
