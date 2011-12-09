@@ -1,4 +1,4 @@
-# collective.js - Plone integration for the List.js library
+# collective.listjs - Plone integration for the List.js library
 
  + Rigel Di Scala <zedr@ipnext.it>
  + IPnext srl - http://www.ipnext.it
