@@ -1,14 +1,9 @@
 collective.js - Plone integration for the List.js library
 =========================================================
+=======
+# collective.listjs - Plone integration for the List.js library
 
- - Rigel Di Scala <zedr@ipnext.it>
- - IPnext srl - http://www.ipnext.it
-
-
-Introduction
-============
-
-List.js is a lightweight JavaScript library that enhances HTML lists, by 
+List.js is a lightweight JavaScript library that enhances HTL lists, by 
 making them searchable, sortable, orderable, and filterable.
 
  + http://listjs.com/
@@ -42,7 +37,7 @@ Usage
 
 A set of views for folderish content are made available once the product is installed.
 
-To enable these views, go to the ZMI/portal_types sections and add the following to
+To enable these views, go to the ZI/portal_types sections and add the following to
 the available_views field of your chosen Folderish types (such as Folder and Topic):
 
  - listjs_folder_simple_view
