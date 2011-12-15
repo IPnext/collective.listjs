@@ -1,0 +1,33 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:five="http://namespaces.zope.org/five"
+  xmlns:browser="http://namespaces.zope.org/browser"
+  i18n_domain="collective.listjs">
+
+  <browser:resourceDirectory
+    name="collective.listjs.ecmascripts"
+    directory="ecmascripts"
+    />
+
+  <browser:resourceDirectory
+    name="collective.listjs.stylesheets"
+    directory="stylesheets"
+    />
+
+  <browser:page
+	for="*"
+	name="listjs_folder_simple_view"
+	class=".folderviews.ListJsEnabledFolderView"
+	template="templates/folder_simple_view.pt"
+	permission="zope2.View"
+	/>
+	
+  <browser:page
+	for="*"
+	name="listjs_folder_tabular_view"
+	class=".folderviews.ListJsEnabledFolderView"
+	template="templates/folder_tabular_view.pt"
+	permission="zope2.View"
+	/>
+	
+</configure>

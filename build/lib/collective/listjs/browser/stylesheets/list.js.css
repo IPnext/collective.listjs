@@ -1,0 +1,20 @@
+/* collective.listjs stylesheet 
+   ---------------------------------------
+   Author: Rigel Di Scala <zedr@ipnext.it>
+*/
+
+/* Common styles */
+
+div#listjs-searchbox {
+	background-color: #efefef;
+}
+div#listjs-searchbox fieldset {
+	margin-top: 1em;
+	padding-top: 1em;
+	border-bottom-style: solid;
+}
+
+/* Folderish tabular view styles */
+div#listjs-target table tbody.list tr td p.desc {
+	font-size: 75%;
+}

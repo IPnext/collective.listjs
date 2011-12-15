@@ -1,0 +1,85 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"
+	metal:use-macro="here/main_template/macros/master" i18n:domain="collective.listjs">
+	<body>
+		<div metal:fill-slot="main">
+			<tal:main-macro metal:define-macro="main"
+				tal:define="kssClassesView context/@@kss_field_decorator_view;
+                       getKssClasses nocall:kssClassesView/getKssClassesInlineEditable;
+                       ">
+
+
+				<div tal:replace="structure provider:plone.abovecontenttitle" />
+
+				<h1 metal:use-macro="here/kss_generic_macros/macros/generic_title_view">
+					Title or id
+            </h1>
+
+				<div tal:replace="structure provider:plone.belowcontenttitle" />
+
+				<p metal:use-macro="here/kss_generic_macros/macros/generic_description_view">
+					Description
+            </p>
+
+				<div tal:replace="structure provider:plone.abovecontentbody" />
+
+				<div id="listjs-target">
+				
+					<tal:listing define="batch view/contents">
+					
+						<tal:block tal:condition="batch">
+
+						<div id="listjs-searchbox">
+							
+						<fieldset>
+							<label>Filter: </label>
+							<input class="search" />
+						</fieldset>
+							
+						</div>
+						
+						<p class="sort" rel="title" i18n:translate="label_sort_title">Sort by Title</p>
+
+						<ul class="list">
+						
+							<tal:block repeat="obj batch">
+							
+							<li tal:define="title obj/Title;
+											desc obj/Description;
+											url obj/getURL;">
+
+				            	<a tal:attributes="href url;">
+				            		<span tal:content="title" class="title">Title</span>  &ndash;
+				            	</a>
+				            	
+								<span tal:content="desc" class="desc">Description</span>
+								
+							</li>
+
+							</tal:block>
+							
+						</ul>
+
+						<!-- Navigation -->
+						<div metal:use-macro="here/batch_macros/macros/navigation" />
+					
+						</tal:block>
+
+					</tal:listing>
+					
+					</div>
+
+				<div tal:replace="structure provider:plone.belowcontentbody" />
+				
+				<!-- List.js -->
+				<script>
+					var options = {
+    					valueNames: ['title', 'desc']
+					};
+					var folderList = new List('listjs-target', options);
+				</script>
+
+
+			</tal:main-macro>
+		</div>
+	</body>
+</html>

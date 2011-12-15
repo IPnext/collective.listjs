@@ -1,0 +1,24 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: Plone\n"
+"POT-Creation-Date: 2011-02-24 16:56+0000\n"
+"PO-Revision-Date: 2009-10-15 10:44+0200\n"
+"Last-Translator: rigel di scala\n"
+"Language-Team: http://www.coactivate.org/projects/plone-italian-translation\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n!=1\n"
+"Language-Code: it\n"
+"Language-Name: Italiano\n"
+"Preferred-Encodings: latin1 utf-8\n"
+"Domain: collective.listjs\n"
+"X-Is-Fallback-For: it-ch it-it\n"
+
+#. Default: "Sort by Title"
+#: collective.listjs/collective/listjs/browser/templates/listjs_folderlist_view.pt:32
+msgid "label_sort_title"
+msgstr "Ordine per Titolo"
