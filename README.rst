@@ -1,9 +1,6 @@
 collective.js - Plone integration for the List.js library
 =========================================================
 
-collective.listjs - Plone integration for the List.js library
--------------------------------------------------------------
-
 List.js is a lightweight JavaScript library that enhances HTL lists, by 
 making them searchable, sortable, orderable, and filterable.
 
